@@ -2,9 +2,10 @@
 Jawaban Soal Bootcamp Arkademy Batch 10 Kloter 3
 
 ### Fungsi JSON pada REST API :
-* Agar Mudah dibaca atau ditulis oleh komputer atau manusia
-* Mempercepat request karena isi content lebih singkat dari pada XML
-* JSON mudah sekali dipetakan pada struktur data yang digunakan oleh sebagian besar bahasa pemrograman terkait data berupa number, string, boolean, null, array dan associative array.
+* Yang pasti untuk berbagi data
+* Agar Mudah dibaca atau ditulis oleh komputer maupun manusia
+* Request Menjadi cepat karena JSON lebih ringkas dari pada XML
+* Menggunakan data bersarang di dalam format JSON memungkinkan kita untuk bekerja pada data yang lebih kompleks.
 
 #### Tools yang saya gunakan :
   * Webserver & Sql Server : XAMPP
