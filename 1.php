@@ -18,3 +18,5 @@ function mybio()
 	print(json_encode($data));
 }
 mybio();
+
+?>
