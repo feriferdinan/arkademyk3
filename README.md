@@ -9,7 +9,7 @@ Jawaban Soal Bootcamp Arkademy Batch 10 Kloter 3
 #### Tools yang saya gunakan :
   * Webserver & Sql Server : XAMPP
   * Web Browser : Google chrome
-  * Framework Aplikasi Programmer(No.6) : CodeIgniter
+  * Framework Aplikasi Programmer(No.6) : CodeIgniter, CSS : Bootstrap 4
 
 ### Penggunaan Aplikasi Programmer(No.6) :
 1. Pastikan Webserver & SQLserver Sudah Di jalankan
