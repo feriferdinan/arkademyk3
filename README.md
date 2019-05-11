@@ -23,7 +23,7 @@ Jawaban Soal Bootcamp Arkademy Batch 10 Kloter 3
 #### Demo Aplikasi Programmer
 * Halaman Utama
 ![demo](https://github.com/feriferdinan/arkademyk3/blob/master/programmer/demo1.png)
-* Tambah
+* Tambah user
 ![demo](https://github.com/feriferdinan/arkademyk3/blob/master/programmer/demo2.png)
 * Berhasil tambah user
 ![demo](https://github.com/feriferdinan/arkademyk3/blob/master/programmer/demo3.png)
