@@ -2,7 +2,8 @@
 SQLyog Community v10.51 
 MySQL - 5.5.5-10.1.36-MariaDB : Database - programmer
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -21,39 +22,44 @@ USE `programmer`;
 DROP TABLE IF EXISTS `skills`;
 
 CREATE TABLE `skills` (
-  `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `skill` varchar(100) DEFAULT NULL,
+  `user_id` INT(11) NOT NULL AUTO_INCREMENT,
+  `skill` VARCHAR(100) DEFAULT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=INNODB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 /*Data for the table `skills` */
 
-insert  into `skills`(`user_id`,`skill`) values (1,'html,css,php,javascript'),(2,'php');
+INSERT  INTO `skills`(`user_id`,`skill`) VALUES (1,'html,css,php,javascript'),(2,'php'),(3,'python'),(4,'html'),(5,''),(6,'php');
 
 /*Table structure for table `users` */
 
 DROP TABLE IF EXISTS `users`;
 
 CREATE TABLE `users` (
-  `uid` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) DEFAULT NULL,
+  `uid` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) DEFAULT NULL,
   PRIMARY KEY (`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=INNODB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 /*Data for the table `users` */
 
-insert  into `users`(`uid`,`name`) values (1,'Septian Feri Ferdinan'),(2,'user');
+INSERT  INTO `users`(`uid`,`name`) VALUES (1,'Septian Feri Ferdinan'),(2,'user'),(3,'user baru'),(4,'nama'),(5,'saya'),(6,'ferdinan');
 
 /* Trigger structure for table `users` */
 
 DELIMITER $$
 
-/*!50003 DROP TRIGGER*//*!50032 IF EXISTS */ /*!50003 `skills` */$$
+USE `programmer`$$
 
-/*!50003 CREATE */ /*!50017 DEFINER = 'root'@'localhost' */ /*!50003 TRIGGER `skills` AFTER INSERT ON `users` FOR EACH ROW BEGIN
-	insert into skills VALUES('','');
-    END */$$
+DROP TRIGGER /*!50032 IF EXISTS */ `skills`$$
 
+CREATE
+    /*!50017 DEFINER = 'root'@'localhost' */
+    TRIGGER `skills` AFTER INSERT ON `users` 
+    FOR EACH ROW BEGIN
+	INSERT INTO skills VALUES('','');
+    END;
+$$
 
 DELIMITER ;
 
